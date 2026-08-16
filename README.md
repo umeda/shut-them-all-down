@@ -1,3 +1,9 @@
+### Script to shutdown Raspberry Pi 3B
+
+This Script waits for a momentary switch closure to ground on GPI026. While waiting, a green LED is displayed. When the switch is closed, the LED turns blue. If the switch is momentarily pressed again within ten seconds, the shutdown process will be aborted. If the switch is not pressed, the script commands a shutdown, and the LED turns read, and then is extinguished. The network activity LED will flicker a few more times be for it's safe to remove power to the device.
+
+For interconnect specifications for the LED, please see the attached schematic.
+
 ### Shutdown Setup Instructions (Running at Boot with *systemd*)
 These instruction provided by Gemini.
 
